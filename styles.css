@@ -1,0 +1,91 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #8e44ad, #3498db, #e74c3c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#map {
+    height: 500px; /* Adjust the height of the map */
+    width: 1000px; /* Adjust the width of the map */
+    margin-right: 20px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.column {
+    width: 100%;
+    padding: 10px;
+}
+
+.column p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-container {
+    margin-top: 0px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
